@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="378.0" prefWidth="552.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="worlddistancecalculator.FXMLDocumentController">
+   <children>
+      <Rectangle arcWidth="5.0" fill="#0259a4" height="52.0" stroke="#0259a4" width="590.0" />
+      <Label layoutX="33.0" prefHeight="53.0" prefWidth="523.0" text="World Distance Calculator" textFill="WHITE">
+         <font>
+            <Font name="AR JULIAN" size="29.0" />
+         </font>
+      </Label>
+      <Label layoutX="33.0" layoutY="72.0" prefHeight="24.0" prefWidth="280.0" text="Enter the coordinates" />
+      <Label layoutX="33.0" layoutY="109.0" prefHeight="24.0" prefWidth="204.0" text="Point One" />
+      <Label layoutX="313.0" layoutY="109.0" prefHeight="24.0" prefWidth="204.0" text="Point Two" />
+      <Label layoutX="33.0" layoutY="145.0" prefHeight="17.0" prefWidth="104.0" text="Latitude" />
+      <Label layoutX="313.0" layoutY="145.0" prefHeight="17.0" prefWidth="104.0" text="Latitude" />
+      <Label layoutX="33.0" layoutY="172.0" prefHeight="17.0" prefWidth="104.0" text="Longitude" />
+      <Label layoutX="311.0" layoutY="172.0" prefHeight="17.0" prefWidth="104.0" text="Longitude" />
+      <TextField fx:id="lat1" layoutX="111.0" layoutY="141.0" prefHeight="25.0" prefWidth="133.0" promptText="Latitude" />
+      <TextField fx:id="lon1" layoutX="111.0" layoutY="168.0" prefHeight="25.0" prefWidth="133.0" promptText="Longitude" />
+      <TextField fx:id="lat2" layoutX="380.0" layoutY="141.0" prefHeight="25.0" prefWidth="133.0" promptText="Latitude" />
+      <TextField fx:id="lon2" layoutX="380.0" layoutY="168.0" prefHeight="25.0" prefWidth="133.0" promptText="Longitude" />
+      <ChoiceBox fx:id="ns1" layoutX="248.0" layoutY="141.0" prefHeight="25.0" prefWidth="47.0">
+          <items>
+              <FXCollections fx:factory="observableArrayList">
+                    <String fx:value="N" />
+                    <String fx:value="S" />
+                </FXCollections>
+          </items>
+      </ChoiceBox>
+      <ChoiceBox fx:id="ew1" layoutX="248.0" layoutY="168.0" prefHeight="25.0" prefWidth="47.0"> <items>
+              <FXCollections fx:factory="observableArrayList">
+                    <String fx:value="E" />
+                    <String fx:value="W" />
+                </FXCollections>
+          </items></ChoiceBox>
+          <ChoiceBox fx:id="ns2" layoutX="517.0" layoutY="141.0" prefHeight="25.0" prefWidth="47.0"> <items>
+              <FXCollections fx:factory="observableArrayList">
+                    <String fx:value="N" />
+                    <String fx:value="S" />
+                </FXCollections>
+          </items></ChoiceBox>
+          <ChoiceBox fx:id="ew2" layoutX="517.0" layoutY="168.0" prefHeight="25.0" prefWidth="47.0"> <items>
+              <FXCollections fx:factory="observableArrayList">
+                    <String fx:value="E" />
+                    <String fx:value="W" />
+                </FXCollections>
+          </items></ChoiceBox>
+      <Button layoutX="69.0" layoutY="216.0" mnemonicParsing="false" onAction="#calculate" prefHeight="44.0" prefWidth="470.0" text="Calculate Distance and Time Difference" />
+      <Label layoutX="76.0" layoutY="269.0" prefHeight="34.0" prefWidth="178.0" text="Distance" />
+      <Label layoutX="76.0" layoutY="303.0" prefHeight="34.0" prefWidth="178.0" text="Time Difference" />
+      <Label fx:id="dist" layoutX="291.0" layoutY="269.0" prefHeight="34.0" prefWidth="178.0" />
+      <Label fx:id="time" layoutX="291.0" layoutY="303.0" prefHeight="34.0" prefWidth="178.0" />
+   </children>
+</AnchorPane>
