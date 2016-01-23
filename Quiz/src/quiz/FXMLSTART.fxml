@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="quiz.FXMLDocumentController">
+   <children>
+      <Button fx:id="START" layoutX="89.0" layoutY="75.0" mnemonicParsing="false" onAction="#startgame" prefHeight="25.0" prefWidth="142.0" text="Start Game" />
+      <Button fx:id="QUIT" layoutX="89.0" layoutY="121.0" mnemonicParsing="false" onAction="#exitgame" prefHeight="25.0" prefWidth="142.0" text="Quit" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="70.0" layoutY="14.0" prefHeight="42.0" prefWidth="181.0" text="FOSS QUIZ" textAlignment="CENTER" textFill="#fc0000" />
+   </children>
+</AnchorPane>

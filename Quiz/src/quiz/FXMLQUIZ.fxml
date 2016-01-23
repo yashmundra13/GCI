@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="279.0" prefWidth="477.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="quiz.FXMLDocumentController">
+   <children>
+      <Label fx:id="QUESTION" alignment="CENTER" prefHeight="123.0" prefWidth="656.0" text="What is the full form of FOSS">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="A1" layoutX="14.0" layoutY="140.0" mnemonicParsing="false" onAction="#nextQuestion" prefHeight="59.0" prefWidth="320.0" text="Free and Open Source Software" />
+      <Button fx:id="A2" layoutX="14.0" layoutY="206.0" mnemonicParsing="false" onAction="#nextQuestion" prefHeight="59.0" prefWidth="320.0" text="Fire and Oil Soup" />
+      <Button fx:id="A3" layoutX="350.0" layoutY="140.0" mnemonicParsing="false" onAction="#nextQuestion" prefHeight="59.0" prefWidth="292.0" text="Full Option Science System" />
+      <Button fx:id="A4" layoutX="350.0" layoutY="206.0" mnemonicParsing="false" onAction="#nextQuestion" prefHeight="59.0" prefWidth="292.0" text="Finder of Solar System" />
+   </children>
+</AnchorPane>

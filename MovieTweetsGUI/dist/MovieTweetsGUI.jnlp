@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="MovieTweetsGUI.jnlp">
+  <information>
+    <title>MovieTweetsGUI</title>
+    <vendor>yashm</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="MovieTweetsGUI.jar" size="4054" download="eager" />
+    <jar href="lib\twitter4j-async-4.0.4.jar" size="196053" download="eager" />
+    <jar href="lib\twitter4j-core-4.0.4.jar" size="290456" download="eager" />
+    <jar href="lib\twitter4j-examples-4.0.4.jar" size="132172" download="eager" />
+    <jar href="lib\twitter4j-media-support-4.0.4.jar" size="20959" download="eager" />
+    <jar href="lib\twitter4j-stream-4.0.4.jar" size="60808" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="MovieTweetsGUI" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="movietweetsgui.MovieTweetsGUI"  name="MovieTweetsGUI" />
+  <update check="always"/>
+</jnlp>
